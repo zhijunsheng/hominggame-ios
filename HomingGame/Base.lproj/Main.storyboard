@@ -22,15 +22,44 @@
                                     <constraint firstAttribute="width" secondItem="28K-RY-zHY" secondAttribute="height" multiplier="1:1" id="vH0-Ox-fLW"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnr-Iu-fYG">
+                                <rect key="frame" x="325" y="756" width="118" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vnr-Iu-fYG" secondAttribute="height" multiplier="1:1" id="rwE-DY-gYA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IzH-pM-CDi">
+                                <rect key="frame" x="325" y="882" width="118" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IzH-pM-CDi" secondAttribute="height" multiplier="1:1" id="Vcc-lZ-zWB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="change"/>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZUl-xH-fxq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Vnr-Iu-fYG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="325" id="3eO-E6-XgE"/>
+                            <constraint firstItem="IzH-pM-CDi" firstAttribute="top" secondItem="Vnr-Iu-fYG" secondAttribute="bottom" constant="8" id="8Lw-YO-PLA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IzH-pM-CDi" secondAttribute="trailing" constant="325" id="8kN-wX-PWG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="28K-RY-zHY" secondAttribute="trailing" constant="20" id="Dvh-S0-y5Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vnr-Iu-fYG" secondAttribute="trailing" constant="325" id="OEe-rd-LCP"/>
                             <constraint firstItem="28K-RY-zHY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vn7-XV-YYB"/>
                             <constraint firstItem="28K-RY-zHY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WJG-cT-YUL"/>
+                            <constraint firstItem="Vnr-Iu-fYG" firstAttribute="top" secondItem="28K-RY-zHY" secondAttribute="bottom" constant="8" id="dse-Fn-9sa"/>
+                            <constraint firstItem="IzH-pM-CDi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="325" id="uN6-vO-IDA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="oneToSixLabel" destination="Vnr-Iu-fYG" id="uea-an-13m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
