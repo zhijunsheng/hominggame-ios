@@ -15,6 +15,8 @@
 		82AE15CD236523A800B631F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82AE15CB236523A800B631F7 /* LaunchScreen.storyboard */; };
 		82AE15D8236523A800B631F7 /* HomingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AE15D7236523A800B631F7 /* HomingGameTests.swift */; };
 		82AE15E32365252D00B631F7 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AE15E22365252D00B631F7 /* BoardView.swift */; };
+		82AE15E52369B7A200B631F7 /* PieceEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AE15E42369B7A200B631F7 /* PieceEngine.swift */; };
+		82AE15E72369B8A200B631F7 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AE15E62369B8A200B631F7 /* Piece.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		82AE15D7236523A800B631F7 /* HomingGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomingGameTests.swift; sourceTree = "<group>"; };
 		82AE15D9236523A800B631F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82AE15E22365252D00B631F7 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		82AE15E42369B7A200B631F7 /* PieceEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceEngine.swift; sourceTree = "<group>"; };
+		82AE15E62369B8A200B631F7 /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				82AE15C2236523A700B631F7 /* SceneDelegate.swift */,
 				82AE15C4236523A700B631F7 /* ViewController.swift */,
 				82AE15E22365252D00B631F7 /* BoardView.swift */,
+				82AE15E42369B7A200B631F7 /* PieceEngine.swift */,
+				82AE15E62369B8A200B631F7 /* Piece.swift */,
 				82AE15C6236523A700B631F7 /* Main.storyboard */,
 				82AE15C9236523A800B631F7 /* Assets.xcassets */,
 				82AE15CB236523A800B631F7 /* LaunchScreen.storyboard */,
@@ -205,8 +211,10 @@
 			files = (
 				82AE15C5236523A700B631F7 /* ViewController.swift in Sources */,
 				82AE15E32365252D00B631F7 /* BoardView.swift in Sources */,
+				82AE15E72369B8A200B631F7 /* Piece.swift in Sources */,
 				82AE15C1236523A700B631F7 /* AppDelegate.swift in Sources */,
 				82AE15C3236523A700B631F7 /* SceneDelegate.swift in Sources */,
+				82AE15E52369B7A200B631F7 /* PieceEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
