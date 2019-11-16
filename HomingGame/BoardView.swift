@@ -7,9 +7,11 @@ class BoardView: UIView {
     var longOriginY = 30
     let side = 66
     
-    
+    var shadowPieceBox = Set<Piece>()
     
     override func draw(_ rect: CGRect) {
+        shadowPieceBox.insert(Piece(pieceCol: 0, pieceRow: 2, pieceColor: .red))
+        
         longOriginX = originX + side * 8
         longOriginY = originY + side * 8
         drawBoard()
