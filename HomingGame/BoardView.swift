@@ -6,7 +6,6 @@ class BoardView: UIView {
     var longOriginX = 67
     var longOriginY = 30
     let side = 66
-    
     var shadowPieceBox = Set<Piece>()
     
     override func draw(_ rect: CGRect) {
@@ -19,18 +18,25 @@ class BoardView: UIView {
     }
     
     func drawPieces() {
-        let red = UIBezierPath(arcCenter: CGPoint(x: originX / 2, y: originY / 2), radius: 20, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: false)
-        #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1).setStroke()
-        red.stroke()
-        let yellow = UIBezierPath(arcCenter: CGPoint(x: longOriginX + originX / 2, y: originY / 2), radius: 20, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: false)
-        #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1).setStroke()
-        yellow.stroke()
-        let blue = UIBezierPath(arcCenter: CGPoint(x: originX / 2, y: longOriginY + originY / 2), radius: 20, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: false)
-        #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1).setStroke()
-        blue.stroke()
-        let green = UIBezierPath(arcCenter: CGPoint(x: longOriginX + originX / 2, y: longOriginY + originY / 2), radius: 20, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise:  false)
-        #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).setStroke()
-        green.stroke()
+        for piece in shadowPieceBox {
+            let piecePathr = UIBezierPath(arcCenter: CGPoint(x: originX + side * 0, y: originY + side * 2), radius: 20, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: false)
+            
+        }
+        
+        
+        
+//        let red = UIBezierPath(arcCenter: CGPoint(x: originX / 2, y: originY / 2), radius: 20, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: false)
+//        #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1).setStroke()
+//        red.stroke()
+//        let yellow = UIBezierPath(arcCenter: CGPoint(x: longOriginX + originX / 2, y: originY / 2), radius: 20, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: false)
+//        #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1).setStroke()
+//        yellow.stroke()
+//        let blue = UIBezierPath(arcCenter: CGPoint(x: originX / 2, y: longOriginY + originY / 2), radius: 20, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: false)
+//        #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1).setStroke()
+//        blue.stroke()
+//        let green = UIBezierPath(arcCenter: CGPoint(x: longOriginX + originX / 2, y: longOriginY + originY / 2), radius: 20, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise:  false)
+//        #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).setStroke()
+//        green.stroke()
     }
     func drawBoard() {
         for i in 0..<2 {

@@ -2,7 +2,7 @@ import Foundation
 
 struct PieceEngine {
     
-    var pieceBox = Set<Piece>()
+    var pieceBox       = Set<Piece>()
     
     
     
