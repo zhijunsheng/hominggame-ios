@@ -9,8 +9,6 @@ class BoardView: UIView {
     var shadowPieceBox = Set<Piece>()
     
     override func draw(_ rect: CGRect) {
-        shadowPieceBox.insert(Piece(pieceCol: 4, pieceRow: 0, pieceColor: .red))
-        
         longOriginX = originX + side * 8
         longOriginY = originY + side * 8
         drawBoard()
@@ -22,12 +20,17 @@ class BoardView: UIView {
             let piecePath = UIBezierPath(arcCenter: CGPoint(x: originX + side * piece.pieceCol + side / 2, y: originY + side * piece.pieceRow + side / 2), radius: 20, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: false)
             switch piece.pieceColor {
             case .red:
-                UIColor.red.setStroke()
-            default:
-                break
+                UIColor.red.setFill()
+            case .yellow:
+                UIColor.yellow.setFill()
+            case .blue:
+                UIColor.blue.setFill()
+            case .green:
+                UIColor.green.setFill()
             }
-            piecePath.stroke()
+            piecePath.fill()
         }
+        
     }
     func drawBoard() {
         for i in 0..<2 {

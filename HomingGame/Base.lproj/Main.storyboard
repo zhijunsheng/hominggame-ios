@@ -65,6 +65,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="boardView" destination="28K-RY-zHY" id="P8j-1R-tDg"/>
                         <outlet property="oneToSixLabel" destination="Vnr-Iu-fYG" id="uea-an-13m"/>
                         <outlet property="whosTurnLabel" destination="Cey-uz-NlM" id="H7Q-FH-p2p"/>
                     </connections>
