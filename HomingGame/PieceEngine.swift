@@ -4,7 +4,9 @@ struct PieceEngine {
     
     var pieceBox       = Set<Piece>()
     
-    
+    func movePiece(piece: PlayerColor, meter: Int) {
+        
+    }
     
     mutating func resetPieces() {
         pieceBox.insert(Piece(pieceCol: 0, pieceRow: 0, pieceColor: .red))

@@ -6,6 +6,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var whosTurnLabel: UILabel!
     
     var pieceEngine = PieceEngine()
+    var whosTurn = PlayerColor.red
     
     
     override func viewDidLoad() {
@@ -17,8 +18,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func change(_ sender: Any) {
-        let oneToSix = arc4random() % 6 + 1
+        let oneToSix = Int(arc4random() % 6 + 1)
         oneToSixLabel.text = "\(oneToSix)"
+        pieceEngine.movePiece(piece: whosTurn, meter: oneToSix)
         
     }
     
