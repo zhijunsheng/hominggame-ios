@@ -21,7 +21,8 @@ class ViewController: UIViewController {
         let oneToSix = Int(arc4random() % 6 + 1)
         oneToSixLabel.text = "\(oneToSix)"
         pieceEngine.movePiece(piece: whosTurn, meter: oneToSix)
-        
+        boardView.shadowPieceBox = pieceEngine.pieceBox
+        boardView.setNeedsDisplay()
     }
     
 }
