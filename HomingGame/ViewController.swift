@@ -17,7 +17,7 @@ class ViewController: UIViewController, HomingDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        oneToSixLabel.text = "1"
+        oneToSixLabel.text = "\(Int(arc4random() % 6 + 1))"
         whosTurnLabel.text = "Red Player's Turn"
         pieceEngine.resetPieces()
         boardView.shadowPieceBox = pieceEngine.pieceBox
