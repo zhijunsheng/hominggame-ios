@@ -5,36 +5,21 @@ struct PieceEngine {
     var pieceBox       = Set<Piece>()
     
     
-    mutating func movePiece(piece: PlayerColor, meter: Int) {
-        guard let movingPiece = pieceWithColor(color: piece) else {
+    mutating func movePiece(fC: Int, fR: Int, tC: Int, tR: Int) {
+        guard let movingPiece = pieceAt(c: fC, r: fR) else {
             return
         }
         pieceBox.remove(movingPiece)
-//        let line = 7
-//
-////        movingPiece.pieceCol-        let line = 7
-//
-//        var leftSteps = movingPiece.pieceCol + (meter - (line - movingPiece.pieceCol))
-//        var rowPlusMove = movingPiece.pieceRow + leftSteps
-//        var a = 11111111
-//        var b = 22222222
-//        if movingPiece.pieceRow == 0 {
-//            if line - movingPiece.pieceCol < meter {
-//
-//                a = 3
-//                b = 6
-//            } else {
-//                a = 5
-//                b = 2
-//            }
-//        }
-        let movedPiece = Piece(pieceCol: movingPiece.pieceCol + meter, pieceRow: 0, pieceColor: movingPiece.pieceColor)
+
+        let movedPiece = Piece(pieceCol: tC, pieceRow: tR, pieceColor: movingPiece.pieceColor)
         
         pieceBox.insert(movedPiece)
     }
-    func pieceWithColor(color: PlayerColor) -> Piece? {
+    
+    
+    func pieceAt(c: Int, r: Int) -> Piece? {
         for piece in pieceBox {
-            if piece.pieceColor == color {
+            if piece.pieceCol == c && piece.pieceRow == r {
                 return piece
             }
         }

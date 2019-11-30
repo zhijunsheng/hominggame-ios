@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82404E74238E9C4F0080396D /* HommingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82404E73238E9C4F0080396D /* HommingDelegate.swift */; };
 		82AE15C1236523A700B631F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AE15C0236523A700B631F7 /* AppDelegate.swift */; };
 		82AE15C3236523A700B631F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AE15C2236523A700B631F7 /* SceneDelegate.swift */; };
 		82AE15C5236523A700B631F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AE15C4236523A700B631F7 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82404E73238E9C4F0080396D /* HommingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HommingDelegate.swift; sourceTree = "<group>"; };
 		82AE15BD236523A700B631F7 /* HomingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82AE15C0236523A700B631F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82AE15C2236523A700B631F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				82AE15EA2371A0CA00B631F7 /* PlayerColor.swift */,
 				82AE15C0236523A700B631F7 /* AppDelegate.swift */,
 				82AE15C2236523A700B631F7 /* SceneDelegate.swift */,
+				82404E73238E9C4F0080396D /* HommingDelegate.swift */,
 				82AE15C4236523A700B631F7 /* ViewController.swift */,
 				82AE15E22365252D00B631F7 /* BoardView.swift */,
 				82AE15E42369B7A200B631F7 /* PieceEngine.swift */,
@@ -214,6 +217,7 @@
 			files = (
 				82AE15C5236523A700B631F7 /* ViewController.swift in Sources */,
 				82AE15E32365252D00B631F7 /* BoardView.swift in Sources */,
+				82404E74238E9C4F0080396D /* HommingDelegate.swift in Sources */,
 				82AE15E72369B8A200B631F7 /* Piece.swift in Sources */,
 				82AE15C1236523A700B631F7 /* AppDelegate.swift in Sources */,
 				82AE15C3236523A700B631F7 /* SceneDelegate.swift in Sources */,
